@@ -1,0 +1,23 @@
+{
+	"name": "advWorkLink",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Data Source=HUYHA;Initial Catalog=AdventureWorks2019;User ID=hdh",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "myKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "dbpassword"
+			}
+		},
+		"connectVia": {
+			"referenceName": "SHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

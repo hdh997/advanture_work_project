@@ -1,0 +1,9 @@
+{
+	"name": "adf-hdh-advwork22",
+	"location": "australiasoutheast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2c60012b-8e08-477f-b340-0d66f33ca232",
+		"tenantId": "87289a64-1766-4545-90f0-81b21d8eafd1"
+	}
+}
