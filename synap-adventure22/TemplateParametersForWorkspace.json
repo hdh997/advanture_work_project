@@ -8,6 +8,9 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"ServerLessSQLDBLINK_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=synap-adventure22-ondemand.sql.azuresynapse.net;Initial Catalog=gold_db"
+		},
 		"SqlServer1_connectionString": {
 			"value": "Integrated Security=False;Data Source=HUYHA;Initial Catalog=AdventureWorksLT2022;User ID=hdh1"
 		},
