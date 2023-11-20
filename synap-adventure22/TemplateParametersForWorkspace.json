@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synap-adventure22"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"SqlServer1_connectionString": {
+			"value": "Integrated Security=False;Data Source=HUYHA;Initial Catalog=AdventureWorksLT2022;User ID=hdh1"
+		},
+		"advWorkLink_connectionString": {
+			"value": "Integrated Security=False;Data Source=HUYHA;Initial Catalog=AdventureWorks2019;User ID=hdh"
+		},
+		"synap-adventure22-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synap-adventure22.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://advwork22adls.dfs.core.windows.net/"
+		},
+		"myKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://kv-hdh-project.vault.azure.net/"
+		},
+		"synap-adventure22-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://advwork22adls.dfs.core.windows.net"
+		}
+	}
+}
