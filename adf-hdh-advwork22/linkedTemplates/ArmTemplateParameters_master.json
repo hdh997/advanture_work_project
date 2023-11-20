@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-hdh-advwork22"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"SqlServer1_connectionString": {
+			"value": "Integrated Security=False;Data Source=HUYHA;Initial Catalog=AdventureWorksLT2022;User ID=hdh1"
+		},
+		"advWorkLink_connectionString": {
+			"value": "Integrated Security=False;Data Source=HUYHA;Initial Catalog=AdventureWorks2019;User ID=hdh"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://advwork22adls.dfs.core.windows.net/"
+		},
+		"AzureDatabricksLink_properties_typeProperties_existingClusterId": {
+			"value": "1119-032938-vqrv1icc"
+		},
+		"myKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://kv-hdh-project.vault.azure.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
