@@ -1,10 +1,10 @@
-# adventure_work_project
-azure DE
+# Adventure work project
+Azure DataEngineer
 
-* Adventrure work light 22 data in MsSQL
-* Create ADLS2 - containers bronze, silver, gold
+* Adventure work light 22 data in MsSQL
+* Create ADLS2 - containers bronze, silver, and gold
 * Use ADF to ingest data from SQL server to ADLS (bronze)
-* Use databrick to tranform an load data from bronze to silver then to gold (delta)
+* Use databrick to tranform an load (full-load) data from bronze to silver then to gold (delta)
 * Create view using Synapse
 * Create dashboard with Power BI
 
