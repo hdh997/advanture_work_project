@@ -2,7 +2,7 @@
 	"name": "sp_createSQLServerLessViews",
 	"properties": {
 		"content": {
-			"query": "USE gold_db\nGO\n\nCREATE OR ALTER PROC CreateSQLServerlessView_gold @ViewName NVARCHAR(100)\nAS\nBEGIN\n\nDECLARE @statement VARCHAR(MAX)\n\n    SET @statement = N'CREATE OR ALTER VIEW' + @ViewName + ' AS\n        SELECT\n            *\n            FROM\n        OPENROWSET(\n            BULK ''https://advwork22adls.dfs.core.windows.net/gold/SalesLT/' + @ViewName + '/'',\n            FORMAT = ''DELTA''\n        ) AS [result]\n    '\n\nEXEC (@statement)\n\nEND\nGO",
+			"query": "USE gold_db\nGO\n\nCREATE OR ALTER PROC CreateSQLServerlessView_gold @ViewName NVARCHAR(100)\nAS\nBEGIN\n\nDECLARE @statement VARCHAR(MAX)\n\n    SET @statement = N'CREATE OR ALTER VIEW ' + @ViewName + ' AS\n        SELECT\n            *\n        FROM\n        OPENROWSET(\n            BULK ''https://advwork22adls.dfs.core.windows.net/gold/SalesLT/' + @ViewName + '/'',\n            FORMAT = ''DELTA''\n        ) AS [result]\n    '\n\nEXEC (@statement)\n\nEND\nGO",
 			"metadata": {
 				"language": "sql"
 			},
